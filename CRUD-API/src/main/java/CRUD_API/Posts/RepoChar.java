@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RepoChar extends JpaRepository<Character, Long> {
-  List<Character> findByTitleContainingIgnoreCaseOrContentContainingIgnoreCase(String name);
+  List<Character> findByNameContainingIgnoreCase(String name);
 
-  List<Character> findByAuthorContainingIgnoreCase(String Status);
+  List<Character> findByStatusIgnoreCase(String Status);
 
 }
