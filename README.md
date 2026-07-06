@@ -28,7 +28,7 @@ GET /characters
 ### 2. Get Character by ID
 
 ```http
-GET /characters/{id}
+GET /characters/1
 ```
 
 **Response:**
