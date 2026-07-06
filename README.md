@@ -3,7 +3,7 @@ CRUD-API-ASSIGNMENT
 
 ## API Endpoints
 
-All endpoints use the base URL: `http://localhost:8080/api/posts`
+All endpoints use the base URL: `https://crud-api-xeva.onrender.com`
 
 ### 1. Get All Characters
 
