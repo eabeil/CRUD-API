@@ -6,7 +6,7 @@
     <title>About | The Kingsguard</title>
     <link rel="icon" type="image/jpg" href="images/favi.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -15,12 +15,11 @@
             <a class="navbar-brand" href="index.html" style="color: rgb(232, 215, 118);">The Kingsguard</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="newChar.html">Add a Character</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/characters">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/createForm">Add a Character</a></li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" action="/characters" method="get">
                 <input class="form-control me-2" type="search" placeholder="Search by Name" aria-label="search">
                 <button class="btn btn-outline-light" type="button" style="border-color: #d4af37; color: #d4af37;">Search</button>
                 </form>
@@ -33,7 +32,7 @@
             <div class="col-lg-8">
                 <h1 class="text-center mb-4" style="color: #d4af37;">About this project</h1>
                 <dive class="text-center mb-5">
-                    <img src="images/kingsguard.jpg" alt="The Kingsguard" class="img-fluid rounded shadow" style="max-height: 300px; border: 2px solid #2a2a30;">
+                    <img src="/images/kingsguard.jpg" alt="The Kingsguard" class="img-fluid rounded shadow" style="max-height: 300px; border: 2px solid #2a2a30;">
                 </dive>
                 
                 <div class="mb-5 p-4 rounded" style="background-color: #2a2a30; border-left: 4px solid #2a2a30;">
@@ -58,7 +57,7 @@
     </main>
 
     <div class="text-center mt-5 mb-3">
-        <a href="index.html" class="btn btn-outline-light px-4 py-2" style="border-color: #d4af37; color: #d4af37;">Return to Home Page</a>
+        <a href="/characters" class="btn btn-outline-light px-4 py-2" style="border-color: #d4af37; color: #d4af37;">Return to Home Page</a>
     </div>
 
 
