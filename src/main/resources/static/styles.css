@@ -1,0 +1,22 @@
+:root {
+    --kingsguard-white: #ffffff;
+    --kingsguard-cream: #f4f4f4;
+    --kingsguard-gold: #d4af37;
+    --steel-grey: #71797e;
+    --bg-dark: #1e1e24; 
+    --text-dark: #222222;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--kingsguard-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: var(--kingsguard-gold);
+}
