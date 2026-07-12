@@ -15,43 +15,33 @@
     
     <main class="container my-5 flex-grow-1">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10">
-                <div class="text-center mb-4">   
-                    <h1 style="color: #d4af37;">Add a New Character</h1>
-                    <p style="color: #d0d0d0;">Submit a request to feature your favorite character</p>
-                </div>
-
-            <div class="p-4 p-md-5 rounded shadow-lg" style="background-color: #2a2a30; border-top: 5px solid #d4af37;">
-                <form action="#" method="get">
-                    <div class="mb-3">
-                        <label for="char-name" class="form-label text-white">Character Name:</label>
-                        <input type="text" class="form-control form-control-lg" id="char-name"  name="char-name" placeholder="e.g., Ser Duncan the Tall" required>
-                    </div>
-
-                <div class="mb-3">
-                    <label for="char-universe" class="form-label text-white">Universe:</label>
-                    <input type="text" class="form-control form-control-lg" id="char-universe" name="char-universe" placeholder="A Song of Ice and Fire" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="char-role" class="form-label text-white">Role:</label>
-                    <input type="text" class="form-control form-control-lg" id="char-role" name="char-role" placeholder="e.g., Lord Commander" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="char-image" class="form-label text-white">Image URL:</label>
-                    <input type="url" class="form-control form-control-lg" id="char-image" name="char-image" placeholder="https://noname.com/image.jpg" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="char-desc" class="form-label text-white">Short Description:</label>
-                    <textarea id="char-desc" class="form-control form-control-lg" name="char-desc" rows="6" placeholder="Enter character background and lore" required></textarea>
-                </div>
-
-                <div class="d-grid">
-                    <button type="submit" class="btn-lg py-3 fw-bold fs-4" style="background-color: #d4af37; color: #111;">Add to Gallery</button>
-                </div>    
+            <div class="col-lg-7">   
+                <h1 style="color: #d4af37;">Add a New Character</h1>
+                <p style="color: #d0d0d0;">Submit a request to feature your favorite character</p>
             </div>
+
+            <form action="/create" method="post" class="form-panel p-4 p-md-5 rounded shadow">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Character Name</label>
+                        <input id="name" name="name" class="form-control" type="text" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input id="title" name="title" class="form-control" type="text" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="weapon" class="form-label">Weapon</label>
+                        <input id="weapon" name="weapon" class="form-control" type="text" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="status" class="form-label">Status</label>
+                        <input id="status" name="status" class="form-control" type="text" placeholder="Alive, deceased, missing..." required>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-gold">Add to Gallery</button>
+                        <a href="/characters" class="btn btn-outline-light">Cancel</a>
+                    </div>
+            </form>
         </div>    
     </main>
 
