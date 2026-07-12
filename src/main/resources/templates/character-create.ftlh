@@ -1,3 +1,4 @@
+<#import "fragments.ftlh" as ui>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +11,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="color: rgb(232, 215, 118);">The Kingsguard</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="newChar.html">Add a Character</a></li>
-                </ul>
-                <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search by Name" aria-label="search">
-                <button class="btn btn-outline-light" type="button" style="border-color: #d4af37; color: #d4af37;">Search</button>
-                </form>
-            </div>
-        </div>        
-    </nav>          
+    <@ui.navigation active="create" /> 
     
     <main class="container my-5 flex-grow-1">
         <div class="row justify-content-center">
@@ -71,12 +56,13 @@
     </main>
 
     <div class="text-center mt-5 mb-3">
-        <a href="index.html" class="btn btn-outline-light px-4 py-2" style="border-color: #d4af37; color: #d4af37;">Return to Home Page</a>
+        <a href="/characters" class="btn btn-outline-light px-4 py-2" style="border-color: #d4af37; color: #d4af37;">Return to Home Page</a>
     </div>
 
     <footer class="bg-dark text-center py-3 mt-auto">
         <p class="mb-0">&copy; 2026 ASOIAF characters. Created for educational purposes.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>                    
 </html>
