@@ -27,6 +27,12 @@ public class CharUiController {
     return "about";
     }
 
+    @GetMapping("/details")
+    public String showAllCharacterDetails(Model model) {
+        model.addAttribute("characterList", charService.getAllCharacters());
+        return "character-details-all";
+    }
+
     @GetMapping("/characters")
     public String showCharacterList(
         @RequestParam(required = false, defaultValue = "") String name,

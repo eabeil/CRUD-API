@@ -10,22 +10,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="color: rgb(232, 215, 118);">The Kingsguard</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/characters">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/createForm">Add a Character</a></li>
-                </ul>
-                <form class="d-flex" action="/characters" method="get">
-                <input class="form-control me-2" type="search" placeholder="Search by Name" aria-label="search">
-                <button class="btn btn-outline-light" type="button" style="border-color: #d4af37; color: #d4af37;">Search</button>
-                </form>
-            </div>
-        </div>        
-    </nav>   
+    <@ui.navigation active="about" />
     
     <main class="container my-5 flex-grow-1">
         <div class="row justify-content-center">
