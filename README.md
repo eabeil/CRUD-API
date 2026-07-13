@@ -1,14 +1,15 @@
 # CRUD-API
-CRUD-API-ASSIGNMENT
+MVC-APP-ASSIGNMENT
 
 ## API Endpoints
 
-All endpoints use the base URL: `https://crud-api-xeva.onrender.com`
+The browser UI is available at `/characters`. JSON API endpoints use the
+`/api/characters` path so they do not conflict with the MVC pages.
 
 ### 1. Get All Characters
 
 ```http
-GET /characters
+GET /api/characters
 ````
 
 **Response:**
@@ -28,7 +29,7 @@ GET /characters
 ### 2. Get Character by ID
 
 ```http
-GET /characters/1
+GET/ api/characters/1
 ```
 
 **Response:**
@@ -46,7 +47,7 @@ GET /characters/1
 ### 3. Create a New Character
 
 ```http
-POST /characters
+POST /api/characters
 request body:
 {
   "name": "Jaime Lannister",
@@ -71,7 +72,7 @@ request body:
 ### 4. Update an Existing Character
 
 ```http
-PUT /characters/{id}
+PUT /api/characters/{id}
 request body:
 {
   "name": "new Jaime Lannister",
@@ -95,7 +96,7 @@ request body:
 ### 5. Delete a Post
 
 ```http
-DELETE /characters/{id}
+DELETE /api/characters/{id}
 ```
 
 **Response:** <Empty>
@@ -121,7 +122,7 @@ GET /api/posts/search?query=barristan
 ### 7. Search Characters by Status
 
 ```http
-GET /characters/search/status?status=alive
+GET api/characters/search/status?status=alive
 ```
 
 **Response:**
