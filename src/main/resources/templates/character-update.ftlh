@@ -35,7 +35,7 @@
                         <input id="status" name="status" value="${character.status}" class="form-control" type="text" required>
                     </div>
                     <div class="d-flex gap-2">
-                        <button type="submit" class="btn btn-gold">Save Changes</button>
+                        <button type="submit" class="btn btn-outline-light" style="border-color: #d4af37; color: #d4af37;">Save Changes</button>
                         <a href="/characters/${character.id?c}" class="btn btn-outline-light">Cancel</a>
                     </div>
                 </form>

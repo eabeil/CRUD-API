@@ -112,7 +112,7 @@
 
             <#if showActions>
                 <div class="d-flex flex-wrap gap-2 mt-4">
-                    <a class="btn btn-gold" href="/updateForm/${character.id?c}">Update Character</a>
+                    <a class="btn btn-outline-light" href="/updateForm/${character.id?c}" style="border-color: #d4af37; color: #d4af37;">Update Character</a>
                     <a class="btn btn-outline-danger" href="/delete/${character.id?c}" onclick="return confirm('Delete this character?')">Delete Character</a>
                     <a class="btn btn-outline-light" href="/characters">Back to Gallery</a>
                 </div>
