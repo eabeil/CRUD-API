@@ -38,7 +38,7 @@
                         <input id="status" name="status" class="form-control" type="text" placeholder="Alive, deceased, missing..." required>
                     </div>
                     <div class="d-flex gap-2">
-                        <button type="submit" class="btn btn-outline-light">Add to Gallery</button>
+                        <button type="submit" class="btn btn-outline-light" style="border-color: #d4af37; color: #d4af37;">Add to Gallery</button>
                         <a href="/characters" class="btn btn-outline-light">Cancel</a>
                     </div>
             </form>
